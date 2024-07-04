@@ -117,9 +117,13 @@ describe("CohortManger", () => {
 
   it("should throw an error if student to remove doesn't exist", () => {
     const cohort12 = cohortManager.createCohort('cohort 12')
-    cohortManager.addStudentsToCohort(student)
+    cohortManager.addStudentsToCohort('cohort 12', student)
 
-    expect(() => cohortManager.removeStudentFromCohort('cohort 12', 3)).toThrow('student not found')
+    // const result1 = cohortManager.searchCohort('cohort 12')
+    // expect(result1).toBeInstanceOf(Cohort)
+    // expect(result1.id).toBe(1)
+
+    expect(() => cohortManager.removeStudentFromCohort('cohort 12', 3)).toThrow('student does not exist')
   })
 
 })

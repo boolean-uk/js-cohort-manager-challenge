@@ -31,7 +31,7 @@ class Cohort {
             this.students.splice(index, 1)
         }
         else {
-            throw ('student not found')
+            throw ('student does not exist')
         }
     }
 }
@@ -100,6 +100,7 @@ cohortManager.createCohort('cohort 13')
 cohortManager.addStudentsToCohort('cohort 12', student1)
 cohortManager.addStudentsToCohort('cohort 12', student2)
 cohortManager.addStudentsToCohort('cohort 13', student1)
+cohortManager.removeStudentFromCohort('cohort 12', 2)
 // cohortManager.searchCohort('cohort')
 
 
