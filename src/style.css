@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template: 
+    'aside main' 1fr /
+    250px 1fr;
+
+    height: 100vh;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 20px;
+    padding: 8px;
+}
+
+aside button {
+    background-color: rgb(46, 46, 114);
+    color: white;
+    border: none;
+    padding: 4px 15px;
+    border-radius: 4px;
+}
+
+aside input {
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+aside form {
+    background-color: rgb(230, 230, 255);
+    border: solid 2px rgb(37, 41, 104);
+    padding: 8px;
+    border-radius: 8px;
+    display: grid;
+    gap: 4px;
+}
+
+/* Main */
+main {
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    padding: 8px;
+}
+
+.select-cohort-container {
+    display: grid;
+    grid-template-columns: 100px min-content;
+    gap: 8px;
+}
+
+.students-ul {
+    list-style:circle;
+}

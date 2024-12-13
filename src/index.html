@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohort Manager Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <form class="add-cohort-form">
+            <label for="add-cohort">Add Cohort</label>
+            <input type="text" placeholder="Cohort name" id="add-cohort-input">
+            <button>Add</button>
+        </form>
+
+        <form class="add-student-form">
+            <div class="select-cohort"></div>
+
+            <label for="first-name">First name</label>
+            <input type="text" placeholder="First name" id="first-name-input" required>
+
+            <label for="last-name">Last name</label>
+            <input type="text" placeholder="Last name" id="last-name-input" required>
+
+            <label for="username">GitHub username</label>
+            <input type="text" placeholder="Username" id="username-input" required>
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email-input" required>
+
+            <button>Add</button>
+        </form>
+
+        <form class="remove-cohort-form"></form>
+    </aside>
+    <main>
+        <div class="select-cohort-container"></div>
+        <ul class="students-ul"></ul>
+    </main>
+    <script src="index.js" type="module"></script>
+    <script src="application.js" type="module"></script>
+</body>
+</html>
